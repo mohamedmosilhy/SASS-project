@@ -1,0 +1,28 @@
+.head-with-border {
+  position: relative;
+  width: 100%;
+  h2 {
+    color: white;
+    background-color: $redColor;
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 15px;
+    max-width: 400px;
+    padding: 10px 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    text-transform: uppercase;
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background-color: #ccc;
+      top: 50%;
+      left: 0;
+    }
+  }
+}

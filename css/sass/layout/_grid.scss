@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+@include minSmall {
+  .container {
+    width: 750px;
+  }
+}
+
+@include minMedium {
+  .container {
+    width: 970px;
+  }
+}
+
+@include minLarge {
+  .container {
+    width: 1170px;
+  }
+}

@@ -1,0 +1,245 @@
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px
+// );
+
+/* start slider */
+
+.slider {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    blockquote {
+      font-size: 20px;
+      line-height: 1.7;
+      font-style: italic;
+      text-align: center;
+      font-weight: bold;
+      color: #5e5e5e;
+      width: 80%;
+      margin: 30px auto;
+    }
+    img {
+      max-width: 100%;
+      height: 500px;
+    }
+    .bullets {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      li {
+        width: 20px;
+        height: 20px;
+        background-color: $greyColor;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border: 2px solid $greyColor;
+        cursor: pointer;
+        &.active {
+          border: 2px solid #333;
+          background-color: white;
+        }
+        &:hover {
+          border: 2px solid #333;
+          background-color: white;
+        }
+      }
+    }
+  }
+}
+
+/* end slider */
+
+/* start services */
+
+.services {
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    .box {
+      padding: 20px;
+      .title {
+        display: flex;
+        gap: 10px;
+        color: #575757;
+        align-items: center;
+
+        svg {
+          font-size: 35px;
+        }
+      }
+
+      p {
+        margin-top: 0;
+        color: #777;
+        line-height: 1.7;
+      }
+      a {
+        color: $redColor;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/* end services */
+
+/* start players */
+
+.our-players {
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    .box {
+      padding: 20px;
+      img {
+        max-width: 100%;
+      }
+      .title {
+        display: flex;
+        gap: 10px;
+        color: #575757;
+        align-items: center;
+        h3 {
+          font-weight: normal;
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+
+      p {
+        margin-top: 0;
+        color: #777;
+        line-height: 1.7;
+      }
+      a {
+        color: $redColor;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/* end players */
+
+/* start lorem */
+
+.lorem {
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    .box {
+      padding: 20px;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        background-color: #333;
+      }
+    }
+  }
+}
+
+/* end lorem */
+
+/* start footer */
+
+.footer {
+  color: $greyColor;
+  background-color: #9c9c9c2b;
+  .row {
+    border-bottom: 1px solid $greyColor;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 15px;
+    .col {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      h3 {
+        color: #333;
+        font-weight: normal;
+      }
+    }
+
+    .latest {
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        img {
+          background-color: white;
+          padding: 5px;
+        }
+        h4 {
+          color: $redColor;
+        }
+      }
+    }
+
+    .details {
+      h4 {
+        margin-top: 0;
+        margin-bottom: 3px;
+      }
+    }
+
+    .contact {
+      gap: 10px;
+
+      textarea {
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        border: none;
+        resize: none;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  input:not(:last-child) {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: $greyColor;
+    }
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+  }
+}
+
+/* end footer */
